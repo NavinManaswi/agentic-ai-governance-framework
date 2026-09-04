@@ -41,3 +41,51 @@ This document defines the identity and access management controls for AI agents,
 ---
 
 ## 3. Agent Identity Lifecycle
+┌─────────────────────────────────────────────────────────────┐
+│ IDENTITY LIFECYCLE │
+│ │
+│ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ │
+│ │PROVISION│───▶│ ACTIVE │───▶│ SUSPEND │───▶│ REVOKE │ │
+│ └─────────┘ └─────────┘ └─────────┘ └─────────┘ │
+│ │ │ │ │ │
+│ ▼ ▼ ▼ ▼ │
+│ Generate ID Authenticate Investigate Terminate │
+│ Assign Owner Execute Tasks Review Logs Archive │
+│ Set Policy Log Actions Restrict Remove │
+│ │
+└─────────────────────────────────────────────────────────────┘
+
+---
+
+## 4. Permission Matrix
+
+| Permission Level | Description | Example Agents |
+|------------------|-------------|----------------|
+| **Level 0: Read-Only** | Can read data but not modify or execute | Report generators |
+| **Level 1: Read + Execute** | Can read data and execute approved tools | Data analysts |
+| **Level 2: Read + Execute + Moderate** | Can make moderate-impact decisions | Customer support agents |
+| **Level 3: Full Execution** | Can make high-impact decisions | Trading agents |
+
+---
+
+## 5. Access Control Checklist
+
+| Check | Requirement | Evidence |
+|-------|-------------|----------|
+| ☐ | Unique identity assigned to every agent | Agent Passport |
+| ☐ | Cryptographic identity implemented | Certificate or key |
+| ☐ | Credential rotation configured | Rotation schedule |
+| ☐ | Least privilege enforced | Permission matrix |
+| ☐ | Permission boundaries defined | Boundary documentation |
+| ☐ | Revocation process documented | Revocation runbook |
+| ☐ | Audit logging enabled | Activity logs |
+
+---
+
+## 6. Signatories
+
+| Signatory | Title | Signature | Date |
+|-----------|-------|-----------|------|
+| | Head of IAM | | |
+| | CISO | | |
+| | Head of AI Governance | | |
