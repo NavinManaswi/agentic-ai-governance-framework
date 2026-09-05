@@ -264,9 +264,9 @@ Identity and authorization framework for every agent in your environment[referen
 
 | Channel | Details |
 |---------|---------|
-| **GitHub** | [github.com/yourusername](https://github.com/yourusername) |
-| **LinkedIn** | [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile) |
-| **Email** | your.email@domain.com |
+| **GitHub** | [github.com/NavinManaswi](https://github.com/NavinManaswi) |
+| **LinkedIn** | [linkedin.com/in/NavinManaswi](https://linkedin.com/in/NavinManaswi) |
+| **Email** | manaswink@gmail.com |
 
 ---
 
